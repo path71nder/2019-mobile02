@@ -19,11 +19,13 @@ public class MainActivity extends AppCompatActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		// TODO: bind layout di sini
+
 	}
 
 	// TODO: generate angka random di sini
 	private void initRandomNumber() {
-
+		Random tebak = new Random();
+		int angka = tebak.nextInt();
 	}
 
 	public void handleGuess(View view) {

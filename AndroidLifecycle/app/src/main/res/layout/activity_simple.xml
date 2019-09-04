@@ -15,11 +15,12 @@
 
     <Button
         android:id="@+id/button_submit"
-        android:text="@string/submit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="handleSubmit"
-        />
+        android:text="@string/submit"
+        tools:layout_editor_absoluteX="-111dp"
+        tools:layout_editor_absoluteY="63dp" />
 
     <TextView
         android:id="@+id/text_output"
