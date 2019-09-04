@@ -12,6 +12,8 @@ public class MainActivity extends AppCompatActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		nameInput = findViewById(R.id.input_name);
+		outputText = findViewById(R.id.text_output);
 	}
 
 	// TODO: tambahkan callback onStart() di sini
