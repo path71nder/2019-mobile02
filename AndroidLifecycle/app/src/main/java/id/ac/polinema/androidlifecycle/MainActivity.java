@@ -53,6 +53,6 @@ public class MainActivity extends AppCompatActivity {
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
-		Toast.makeText(this, "App on Destroy", Toast.LENGTH_SHORT).show();
+		Toast.makeText(this, "App on Destroyed", Toast.LENGTH_SHORT).show();
 	}
 }
