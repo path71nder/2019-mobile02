@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SimpleActivity">
+    android:layout_margin="10dp"
+    tools:context=".SimpleActivity"
+    android:orientation="vertical">
 
     <EditText
         android:id="@+id/input_name"
-        android:hint="@string/hint_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        />
+        android:hint="@string/hint_name"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-5dp"
+        android:importantForAutofill="no"
+        android:inputType="text" />
 
     <Button
         android:id="@+id/button_submit"
@@ -19,13 +24,16 @@
         android:layout_height="wrap_content"
         android:onClick="handleSubmit"
         android:text="@string/submit"
-        tools:layout_editor_absoluteX="-111dp"
-        tools:layout_editor_absoluteY="63dp" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="73dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/text_output"
-        android:textSize="24sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="156dp"
+        tools:ignore="MissingConstraints" />
+</LinearLayout>
